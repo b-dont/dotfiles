@@ -20,7 +20,7 @@ fi
 
 shopt -s dotglob
 
-for f in $dots_dir*; do
+for f in "$dots_dir"*; do
 	echo "Copying '$f' to '$HOME'"
-	cp $f $HOME
+	cp "$f" "$HOME"
 done
