@@ -5,9 +5,9 @@ start_dir=$(pwd)
 
 for d in $(find ~/.local/share/nvim/site/pack/local/start -maxdepth 1 -type d)
 do
-	cd "$d" || return
+	cd "$d" || exit
 	git pull
 	cd ..
 done
 
-cd "$start_dir" || return
+cd "$start_dir" || exit
