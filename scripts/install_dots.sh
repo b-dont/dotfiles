@@ -3,6 +3,7 @@
 nvimdir=~/.config/nvim/
 alacrittydir=~/.config/alacritty/
 dots_dir=~/dot-files/dots/
+omz_dir=~/.oh-my-zsh/custom/plugins
 
 if ! [[ -d "$alacrittydir" ]]
 then
@@ -12,8 +13,14 @@ fi
 
 if ! [[ -d "$nvimdir" ]]
 then
-	echo "Directory '~/.config/nvim' not found. Creating directory"
+	echo "Directory '~/.config/nvim' not found. Creating directory."
 	mkdir -p $nvimdir
+fi
+
+if ! [[ -d "$omz_dir" ]]
+then
+	echo "Directory '~/.oh-my-zsh/custom/plugins' not found. Creating directory."
+	mkdir -p $omz_dir
 fi
 
 echo "Moving init.vim to $nvimdir"

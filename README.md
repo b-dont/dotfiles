@@ -36,4 +36,4 @@ To update the files, run `git pull` in the directory, then run `updots` from any
 
 ## TODOs
 - Implement compatibility with [GNU stow](https://www.gnu.org/software/stow/manual/stow.html)
-- Refactor install and update scripts
+- Refactor install and update scripts for NeoVim plugins and oh-my-zsh addons
