@@ -1,5 +1,6 @@
 #!/bin/bash
 
+start_dir=$(pwd)
 nvimdir=~/.config/nvim/
 alacrittydir=~/.config/alacritty/
 dots_dir=~/dot-files/dots/
@@ -33,3 +34,9 @@ for f in "$dots_dir"*; do
 	echo "Copying '$f' to '$HOME'"
 	cp "$f" "$HOME/.$f"
 done
+
+echo "Installing oh-my-zsh plugins"
+cd $omz_dir || exit
+
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
