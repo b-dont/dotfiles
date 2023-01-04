@@ -3,7 +3,7 @@
 start_dir=$(pwd)
 nvimdir=~/.config/nvim/
 alacrittydir=~/.config/alacritty/
-dots_dir=~/dot-files/dots/
+dots_dir=~/dotfiles/dots/
 omz_dir=~/.oh-my-zsh/custom/plugins
 
 if ! [[ -d "$alacrittydir" ]]
@@ -37,6 +37,7 @@ done
 
 echo "Installing oh-my-zsh plugins"
 cd $omz_dir || exit
-
 git clone https://github.com/zsh-users/zsh-autosuggestions.git
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+cd $start_dir || exit
