@@ -3,8 +3,15 @@
 start_dir=$(pwd)
 nvimdir=~/.config/nvim/
 alacrittydir=~/.config/alacritty/
+helix_dir=~/.config/helix/
 dots_dir=~/dotfiles/dots/
 omz_dir=~/.oh-my-zsh/custom/plugins
+
+if ! [[ -d "$helix_dir" ]]
+then
+	echo "Directory '~/.config/helix' not found. Creating directory."
+	mkdir -p $helix_dir
+fi
 
 if ! [[ -d "$alacrittydir" ]]
 then
@@ -28,6 +35,8 @@ echo "Moving init.vim to $nvimdir"
 cp configs/init.vim $nvimdir
 echo "Moving alacritty.yml to $alacrittydir"
 cp configs/alacritty.yml $alacrittydir
+echo "Moving helix config files to $helix_dir"
+cp -r configs/helix/* $helix_dir
 
 shopt -s dotglob
 for f in "$dots_dir"*; do
