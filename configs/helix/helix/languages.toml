@@ -1,0 +1,43 @@
+[[language]]
+name = "rust"
+auto-format = true
+
+[language.config]
+checkOnSave = { command = "clippy" }
+
+[[language]]
+name = "lua"
+auto-format = true
+
+[[language]]
+name = "bash"
+auto-format = true
+file-types = [".aliases", ".tmux.conf", ".zshrc", ".p10k.zsh"]
+
+[[language]]
+name = "python"
+auto-format = true
+
+[[language]]
+name = "html"
+auto-format = false
+
+[[language]]
+name = "css"
+auto-format = false
+
+[[language]]
+name = "scss"
+auto-format = false
+
+[[language]]
+name = "yaml"
+auto-format = false
+
+[[language]]
+name = "toml"
+auto-format = false
+
+[[language]]
+name = "markdown"
+auto-format = false
