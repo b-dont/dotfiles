@@ -6,7 +6,6 @@ auto-format = true
 checkOnSave = { command = "clippy" }
 
 [[grammar]]
-
 [[language]]
 name = "lua"
 auto-format = true
@@ -26,4 +25,12 @@ auto-format = false
 
 [[language]]
 name = "css"
+auto-format = false
+
+[[language]]
+name = "yaml"
+auto-format = false
+
+[[language]]
+name = "toml"
 auto-format = false
