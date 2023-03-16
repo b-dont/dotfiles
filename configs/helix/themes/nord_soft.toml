@@ -36,27 +36,39 @@
 "hint" = "nord10"
 
 "ui.background" = {}
-"ui.linenr" = { fg = "nord3" }
-"ui.linenr.selected" = { fg = "nord13" }
-"ui.cursorline" = { bg = "nord1" }
-"ui.statusline" = { fg = "nord4", bg = "nord0" }
-"ui.statusline.normal" = { fg = "nord4", bg = "nord0" }
-"ui.statusline.insert" = { fg = "nord4", bg = "nord9" }
-"ui.statusline.select" = { fg = "nord4", bg = "nord12" }
-"ui.statusline.inactive" = { fg = "fg4", bg = "nord1" }
+
+# Number Lines
+"ui.linenr" = "nord3"
+"ui.linenr.selected" = "nord13"
+
+# Cursor
+"ui.cursor.primary" = { fg = "nord0", bg = "nord4" }
+"ui.cursor.match" = { fg = "nord4", bg = "nord3" }
+"ui.cursorline.primary" = { bg = "nord2" }
+"ui.cursorline.secondary" = { bg = "nord1" }
+"ui.cursorcolumn.primary" = { bg = "nord2" }
+"ui.cursorcolumn.secondary" = { bg = "nord1" }
+
+# Selections
+"ui.selection.primary" = { fg = "nord0", bg = "nord6" }
+"ui.selection" = { fg = "nord1", bg = "nord4" }
+
+# Statusline
+"ui.statusline" = { fg = "nord4", bg = "nord1"}
+"ui.statusline.inactive" = { fg = "nord3"}
+"ui.statusline.normal" = { fg = "nord0", bg = "nord14" }
+"ui.statusline.insert" = { fg = "nord0", bg = "nord13" }
+"ui.statusline.select" = { fg = "nord0", bg = "nord15" }
+
 "ui.popup" = { bg = "nord1" }
 "ui.window" = { bg = "nord1" }
 "ui.help" = { bg = "nord1", fg = "nord4" }
 "ui.text" = { fg = "nord4" }
 "ui.text.focus" = { fg = "nord4" }
-"ui.selection" = { bg = "nord2" }
-"ui.selection.primary" = { bg = "nord3" }
-"ui.cursor.primary" = { bg = "fg4", fg = "nord1" }
-"ui.cursor.match" = { bg = "nord3" }
 "ui.menu" = { fg = "nord4", bg = "nord2" }
 "ui.menu.selected" = { fg = "nord2", bg = "nord10", modifiers = ["bold"] }
-"ui.virtual.whitespace" = "nord2"
-"ui.virtual.ruler" = { bg = "nord1" }
+"ui.virtual.whitespace" = "nord3"
+"ui.virtual.ruler" = { bg = "nord3" }
 
 "diagnostic.warning" = { underline = { color = "nord12", style = "curl" } }
 "diagnostic.error" = { underline = { color = "nord11", style = "curl" } }

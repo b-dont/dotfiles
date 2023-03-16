@@ -1,6 +1,7 @@
 theme = "nord_soft"
 
 [editor]
+color-modes = true
 line-number = "relative"
 mouse = false
 cursorline = true
@@ -19,11 +20,14 @@ hidden = false
 
 [editor.statusline]
 left = ["mode", "spinner", "file-name"]
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+right = ["diagnostics", "selections", "position", "position-percentage", "total-line-numbers", "file-type"]
 separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
+
+[editor.lsp]
+display-messages = true
 
 [editor.search]
 smart-case = false
@@ -33,3 +37,8 @@ render = 'all'
 
 [editor.whitespace.characters]
 space = ' '
+
+[editor.indent-guides]
+render = true
+character = "▏"
+skip-levels = 1
