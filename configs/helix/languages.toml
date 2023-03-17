@@ -34,3 +34,5 @@ auto-format = false
 [[language]]
 name = "toml"
 auto-format = false
+# Taplo is disabled due to a known bug in the LSP
+language-server = { command = ""}

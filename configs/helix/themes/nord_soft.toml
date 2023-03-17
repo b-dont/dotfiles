@@ -54,7 +54,7 @@
 "ui.selection" = { fg = "nord1", bg = "nord4" }
 
 # Statusline
-"ui.statusline" = { fg = "nord4", bg = "nord1"}
+"ui.statusline" = { fg = "nord4" }
 "ui.statusline.inactive" = { fg = "nord3"}
 "ui.statusline.normal" = { fg = "nord0", bg = "nord14" }
 "ui.statusline.insert" = { fg = "nord0", bg = "nord13" }

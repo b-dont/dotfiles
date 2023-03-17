@@ -9,6 +9,7 @@ These are my dot files and configs for my terminal emulator, shell, and text edi
 4. [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 5. [NeoVim](https://github.com/neovim/neovim)
 6. [Fira Code Nerd Font](https://github.com/tonsky/FiraCode)
+7. [Helix Editor](https://helix-editor.com/)
 
 ## NeoVim Addons
 1. [auto-pairs](https://github.com/jiangmiao/auto-pairs)
@@ -30,9 +31,9 @@ I don't use a plugin-manager for NeoVim, I simply clone the git repository for w
 The installation of these addons are installed automatically with the `./install.sh` script.
 
 ## Installation
-To install the dot files and configs, just run `./install.sh` from `dot-files/`. This will copy all of the dot files to your home directory, and and copy the configs for NeoVim and Alacritty to their proper locations. 
+To install the dot files and configs, just run `./install.sh` from `dotfiles/`. This will create a sym-link of the dot files to your home directory and the configs for NeoVim, Helix, and Alacritty to their proper locations. 
 
-To update the files, run `git pull` in the directory, then run `updots` from anywhere. There's an alias in the `.zshrc` that will call the updates. You can update your NeoVim plugins by running `nvimup` from anywhere.
+To update the files, run `git pull` in the directory. To update the NeoVim addons run `nvimup` from anywhere.
 
 ## TODOs
 - Implement compatibility with [GNU stow](https://www.gnu.org/software/stow/manual/stow.html)
