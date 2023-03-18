@@ -1,12 +1,5 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
-Project:    Nord Alacritty
-Version:    0.1.0
-Repository: https://github.com/arcticicestudio/nord-alacritty
-License:    MIT
-References:
-  https://github.com/alacritty/alacritty
-
 # Colors (Nord)
 colors:
   primary:

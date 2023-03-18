@@ -19,8 +19,8 @@ select = "underline"
 hidden = false
 
 [editor.statusline]
-left = ["mode", "spinner", "file-name"]
-right = ["diagnostics", "selections", "position", "position-percentage", "total-line-numbers", "file-type"]
+left = ["mode", "spacer", "spinner", "file-name"]
+right = ["diagnostics", "position", "total-line-numbers", "file-type"]
 separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
@@ -42,3 +42,16 @@ space = ' '
 render = true
 character = "▏"
 skip-levels = 1
+
+# Key Remaps
+[keys.normal]
+C-j = ":hs"
+C-k = ":hs"
+C-h = ":vs"
+C-l = ":vs"
+
+# [editor.soft-wrap]
+# enable = true
+# max-wrap = 25
+# max-indent-retain = 0
+# wrap-indicator = ""

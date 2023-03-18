@@ -16,15 +16,16 @@ for dir in $dirs; do
 	if ! [[ -d "$dir" ]]; then
 		echo "Directory $dir not found. Creating $dir."
 		mkdir -p $dir
-		if [ $dir = $nvimdir ]; then
+		if [ $dir -eq $nvimdir ]; then
 			echo "Creating sym-link of init.vim at $dir"
 			ln -s $configs_dir/init.vim $dir/init.vim
-		elif [ $dir = $alacrittydir ]; then
+		elif [ $dir -eq $alacrittydir ]; then
 			echo "Creating sym-link of alacritty.yml at $dir"
 			ln -s $configs_dir/alacritty.yml $dir/alacritty.yml
-		elif [ $dir = $helix_dir ]; then
+		elif [ $dir -eq $helix_dir ]; then
 			echo "Creating sym-link of helix config directory at $dir"
 			ln -s $configs_dir/helix $dir
+		fi
 	fi
 done
 
