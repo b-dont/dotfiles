@@ -57,7 +57,7 @@
 "ui.statusline" = { fg = "nord4" }
 "ui.statusline.inactive" = { fg = "nord3"}
 "ui.statusline.normal" = { fg = "nord0", bg = "nord14" }
-"ui.statusline.insert" = { fg = "nord0", bg = "nord13" }
+"ui.statusline.insert" = { fg = "nord0", bg = "nord11" }
 "ui.statusline.select" = { fg = "nord0", bg = "nord15" }
 
 "ui.popup" = { bg = "nord1" }
