@@ -1,37 +1,37 @@
 [[language]]
 name = "rust"
-auto-format = true
+auto-format = false
 
 [language.config]
 checkOnSave = { command = "clippy" }
 
 [[language]]
 name = "lua"
-auto-format = true
+auto-format = false
 
 [[language]]
 name = "bash"
-auto-format = true
+auto-format = false
 file-types = [".aliases", ".zshrc", "conf", "zsh"]
 
 [[language]]
 name = "python"
-auto-format = true
+auto-format = false
 
 [[language]]
 name = "html"
-auto-format = true
+auto-format = false
 
 [[language]]
 name = "css"
-auto-format = true
+auto-format = false
 
 [[language]]
 name = "yaml"
-auto-format = true
+auto-format = false
 
 [[language]]
 name = "toml"
-auto-format = true
+auto-format = false
 # Taplo is disabled due to a known bug in the LSP
 language-server = { command = ""}
