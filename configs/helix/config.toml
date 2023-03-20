@@ -45,6 +45,7 @@ skip-levels = 1
 
 # Key Remaps
 [keys.normal]
+# Split windows with C-j/k/h/l
 C-j = ":hs"
 C-k = ":hs"
 C-h = ":vs"

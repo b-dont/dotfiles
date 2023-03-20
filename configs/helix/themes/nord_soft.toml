@@ -56,7 +56,7 @@
 # Statusline
 "ui.statusline" = { fg = "nord4" }
 "ui.statusline.inactive" = { fg = "nord3"}
-"ui.statusline.normal" = { fg = "nord0", bg = "nord14" }
+"ui.statusline.normal" = { fg = "nord2", bg = "nord14" }
 "ui.statusline.insert" = { fg = "nord13", bg = "nord11" }
 "ui.statusline.select" = { fg = "nord1", bg = "nord15" }
 
