@@ -17,7 +17,7 @@
 "function.macro" = "nord7"
 "function.builtin" = "nord13"
 "tag" = "nord11"
-"comment" = { fg = "nord3", modifiers = ["italic"] }
+"comment" = { fg = "nord4", modifiers = ["italic", "dim"] }
 "constant" = { fg = "nord15" }
 "constant.builtin" = { fg = "nord15", modifiers = ["bold"] }
 "string" = "nord14"
@@ -38,15 +38,15 @@
 "ui.background" = {}
 
 # Number Lines
-"ui.linenr" = "nord3"
-"ui.linenr.selected" = "nord13"
+"ui.linenr" = { fg = "nord3" }
+"ui.linenr.selected" = { fg = "nord13", modifiers = ["bold"] }
 
 # Cursor
 "ui.cursor.primary" = { fg = "nord0", bg = "nord4" }
 "ui.cursor.match" = { fg = "nord4", bg = "nord3" }
-"ui.cursorline.primary" = { bg = "nord2" }
+"ui.cursorline.primary" = { bg = "nord1" }
 "ui.cursorline.secondary" = { bg = "nord1" }
-"ui.cursorcolumn.primary" = { bg = "nord2" }
+"ui.cursorcolumn.primary" = { bg = "nord1" }
 "ui.cursorcolumn.secondary" = { bg = "nord1" }
 
 # Selections
