@@ -1,5 +1,4 @@
 # Launch with tmux
-
 if ! [[ -n $SSH_CONNECTION ]]; then
   if [ "$TMUX" = "" ]; then tmux; fi
 fi
@@ -89,8 +88,6 @@ plugins=(
   zsh-syntax-highlighting
 )
 
-source $ZSH/oh-my-zsh.sh
-
 # Get .aliases file if it exists
 if [ -f ~/.aliases ]; then
 	. ~/.aliases
@@ -99,12 +96,8 @@ fi
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='hx'
-fi
+# Editor
+export EDITOR='hx'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
