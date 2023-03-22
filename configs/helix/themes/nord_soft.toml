@@ -17,7 +17,7 @@
 "function.macro" = "nord7"
 "function.builtin" = "nord13"
 "tag" = "nord11"
-"comment" = { fg = "nord4", modifiers = ["italic", "dim"] }
+"comment" = { fg = "nord9", modifiers = ["italic", "dim"] }
 "constant" = { fg = "nord15" }
 "constant.builtin" = { fg = "nord15", modifiers = ["bold"] }
 "string" = "nord14"
