@@ -61,7 +61,7 @@
 "ui.statusline.select" = { fg = "nord1", bg = "nord15" }
 
 "ui.popup" = { bg = "nord1" }
-"ui.window" = { bg = "nord0" }
+"ui.window" = { bg = "nord1" }
 "ui.help" = { bg = "nord1", fg = "nord4" }
 "ui.text" = { fg = "nord4" }
 "ui.text.focus" = { fg = "nord4" }
