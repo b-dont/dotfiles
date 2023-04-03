@@ -18,8 +18,11 @@ select = "underline"
 [editor.file-picker]
 hidden = false
 
+[editor.soft-wrap]
+enable = true
+
 [editor.statusline]
-left = ["mode", "spacer", "spinner", "file-name"]
+left = ["mode", "spacer", "spacer", "version-control", "spacer", "file-name"]
 right = ["diagnostics", "position", "total-line-numbers", "file-type"]
 separator = "│"
 mode.normal = "NORMAL"
@@ -28,6 +31,7 @@ mode.select = "SELECT"
 
 [editor.lsp]
 display-messages = true
+display-inlay-hints = true
 
 [editor.search]
 smart-case = false
