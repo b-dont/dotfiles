@@ -107,6 +107,17 @@ export EDITOR='hx'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+function precmd {
+    # Set up the venv
+    if ! typeset -f deactivate >/dev/null; then
+        for activate in ./venv/bin/activate ./.venv/bin/activate; do
+            if [ -e "$activate" ]; then
+                . "$activate"
+            fi
+        done
+    fi
+}
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
