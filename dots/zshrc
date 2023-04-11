@@ -93,6 +93,10 @@ if [ -f ~/.aliases ]; then
 	. ~/.aliases
 fi
 
+if [ -f ~/.zprofile ]; then
+	. ~/.zprofile
+fi
+
 # Auto activate venv when entering a venv directory
 function precmd {
     # Set up the venv

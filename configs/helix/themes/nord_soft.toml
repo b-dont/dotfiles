@@ -1,4 +1,4 @@
-# Soft Nord Theme for Helix Text Editor
+# Soft Nord Theme (dark) for Helix Text Editor
 
 "attribute" = "nord7"
 "keyword" = { fg = "nord11" }
@@ -58,9 +58,9 @@
 # Statusline
 "ui.statusline" = { fg = "nord4" }
 "ui.statusline.inactive" = { fg = "nord3"}
-"ui.statusline.normal" = { fg = "nord14", bg = "nord1" }
-"ui.statusline.insert" = { fg = "nord13", bg = "nord1" }
-"ui.statusline.select" = { fg = "nord15", bg = "nord1" }
+"ui.statusline.normal" = { fg = "nord14" }
+"ui.statusline.insert" = { fg = "nord13" }
+"ui.statusline.select" = { fg = "nord15" }
 "ui.statusline.separator" = "nord1"
 
 "ui.popup" = { bg = "nord1" }
@@ -68,8 +68,8 @@
 "ui.help" = { bg = "nord1", fg = "nord4" }
 "ui.text" = { fg = "nord4" }
 "ui.text.focus" = { fg = "nord4" }
-"ui.menu" = { fg = "nord4", bg = "nord2" }
-"ui.menu.selected" = { fg = "nord2", bg = "nord10", modifiers = ["bold"] }
+"ui.menu" = { fg = "nord4", bg = "nord1" }
+"ui.menu.selected" = { fg = "nord6", bg = "nord3" }
 "ui.virtual.whitespace" = "nord3"
 "ui.virtual.ruler" = { bg = "nord3" }
 
@@ -86,24 +86,24 @@
 "markup.raw" = "nord11"
 
 [palette]
-# Backgrounds
+# Polar Night - Backgrounds
 nord0 = "#2e3440"
 nord1 = "#3b4252"
 nord2 = "#434c5e"
 nord3 = "#4c566a"
 
-# Foregrounds 
+# Snow Storm - Foregrounds
 nord4 = "#d8dee9"
 nord5 = "#e5e9f0"
 nord6 = "#eceff4"
 
-# Blue tones
+# Frost - Blue tones
 nord7 = "#8fbcbb" # Aqua 1
 nord8 = "#88c0d0" # Aqua 2
 nord9 = "#81a1c1" # Blue 1
 nord10 = "#5e81ac" # Blue 2
 
-# Other Colors
+# Aurora - Other Colors
 nord11 = "#bf616a" # Red
 nord12 = "#d08770" # Orange
 nord13 = "#ebcb8b" # Yellow
