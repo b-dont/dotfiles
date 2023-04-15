@@ -93,6 +93,10 @@ if [ -f ~/.aliases ]; then
 	. ~/.aliases
 fi
 
+if [ -f ~/.zprofile ]; then
+	. ~/.zprofile
+fi
+
 # Auto activate venv when entering a venv directory
 function precmd {
     # Set up the venv
@@ -111,6 +115,9 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias nvimup="$HOME/dotfiles/scripts/update_nvim_addons.sh"
+$(thefuck --alias)
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/dots/p10k.zsh.
 [[ ! -f ~/dotfiles/dots/p10k.zsh ]] || source ~/dotfiles/dots/p10k.zsh
+
+eval $(thefuck --alias)
