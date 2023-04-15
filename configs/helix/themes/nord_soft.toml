@@ -1,3 +1,5 @@
+# Soft Nord Theme for Helix Text Editor
+
 "attribute" = "nord7"
 "keyword" = { fg = "nord11" }
 "keyword.directive" = "nord11"
@@ -56,12 +58,13 @@
 # Statusline
 "ui.statusline" = { fg = "nord4" }
 "ui.statusline.inactive" = { fg = "nord3"}
-"ui.statusline.normal" = { fg = "nord2", bg = "nord14" }
-"ui.statusline.insert" = { fg = "nord13", bg = "nord11" }
-"ui.statusline.select" = { fg = "nord1", bg = "nord15" }
+"ui.statusline.normal" = { fg = "nord14", bg = "nord1" }
+"ui.statusline.insert" = { fg = "nord13", bg = "nord1" }
+"ui.statusline.select" = { fg = "nord15", bg = "nord1" }
+"ui.statusline.separator" = "nord1"
 
 "ui.popup" = { bg = "nord1" }
-"ui.window" = { bg = "nord0" }
+"ui.window" = { bg = "nord1" }
 "ui.help" = { bg = "nord1", fg = "nord4" }
 "ui.text" = { fg = "nord4" }
 "ui.text.focus" = { fg = "nord4" }
@@ -94,11 +97,13 @@ nord4 = "#d8dee9"
 nord5 = "#e5e9f0"
 nord6 = "#eceff4"
 
+# Blue tones
 nord7 = "#8fbcbb" # Aqua 1
 nord8 = "#88c0d0" # Aqua 2
 nord9 = "#81a1c1" # Blue 1
 nord10 = "#5e81ac" # Blue 2
 
+# Other Colors
 nord11 = "#bf616a" # Red
 nord12 = "#d08770" # Orange
 nord13 = "#ebcb8b" # Yellow

@@ -12,7 +12,7 @@ auto-format = false
 [[language]]
 name = "bash"
 auto-format = false
-file-types = [".aliases", ".zshrc", "zshrc", "conf", "zsh"]
+file-types = [".aliases", ".zshrc", "zshrc", ".zprofile", "zprofile", "conf", "zsh"]
 
 [[language]]
 name = "python"
