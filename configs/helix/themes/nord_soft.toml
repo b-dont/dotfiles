@@ -36,6 +36,7 @@
 "error" = "nord11"
 "info" = "nord7"
 "hint" = "nord10"
+"diagnostic" = { bg = "nord1" }
 
 "ui.background" = {}
 
