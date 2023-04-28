@@ -59,9 +59,9 @@
 # Statusline
 "ui.statusline" = { fg = "nord4", bg = "nord0" }
 "ui.statusline.inactive" = { fg = "nord3" }
-"ui.statusline.normal" = { fg = "nord14", bg = "nord1" }
-"ui.statusline.insert" = { fg = "nord13", bg = "nord1" }
-"ui.statusline.select" = { fg = "nord15", bg = "nord1" }
+"ui.statusline.normal" = { fg = "nord14"}
+"ui.statusline.insert" = { fg = "nord13"}
+"ui.statusline.select" = { fg = "nord15"}
 "ui.statusline.separator" = "nord1"
 
 "ui.popup" = { bg = "nord1" }
