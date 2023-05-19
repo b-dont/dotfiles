@@ -42,7 +42,7 @@
 
 # Number Lines
 "ui.linenr" = { fg = "nord3" }
-"ui.linenr.selected" = { fg = "nord13", modifiers = ["bold"] }
+"ui.linenr.selected" = { fg = "nord8", modifiers = ["bold"] }
 
 # Cursor
 "ui.cursor.primary" = { fg = "nord0", bg = "nord4" }
