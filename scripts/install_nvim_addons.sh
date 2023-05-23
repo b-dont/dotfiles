@@ -29,5 +29,6 @@ for addon in "${!addons[@]}";
 	do 
 	echo "installing $addon";
 	git clone ${addons[$addon]};
+done
 
 cd "$start_dir" || return
