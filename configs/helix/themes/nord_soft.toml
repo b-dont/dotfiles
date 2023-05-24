@@ -36,12 +36,13 @@
 "error" = "nord11"
 "info" = "nord7"
 "hint" = "nord10"
+"diagnostic" = { bg = "nord1" }
 
 "ui.background" = {}
 
 # Number Lines
 "ui.linenr" = { fg = "nord3" }
-"ui.linenr.selected" = { fg = "nord13", modifiers = ["bold"] }
+"ui.linenr.selected" = { fg = "nord8", modifiers = ["bold"] }
 
 # Cursor
 "ui.cursor.primary" = { fg = "nord0", bg = "nord4" }
@@ -58,9 +59,9 @@
 # Statusline
 "ui.statusline" = { fg = "nord4", bg = "nord0" }
 "ui.statusline.inactive" = { fg = "nord3" }
-"ui.statusline.normal" = { fg = "nord14", bg = "nord1" }
-"ui.statusline.insert" = { fg = "nord13", bg = "nord1" }
-"ui.statusline.select" = { fg = "nord15", bg = "nord1" }
+"ui.statusline.normal" = { fg = "nord14"}
+"ui.statusline.insert" = { fg = "nord13"}
+"ui.statusline.select" = { fg = "nord15"}
 "ui.statusline.separator" = "nord1"
 
 "ui.popup" = { bg = "nord1" }
