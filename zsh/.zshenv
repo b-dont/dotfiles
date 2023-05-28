@@ -1,7 +1,7 @@
 # Exports for zsh env variables and other stuff.
 
 . "$HOME/.cargo/env"
-
+export DOTFILES=$HOME/.dotfiles
 export DOCKER=podman
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export LANG=en_US.UTF-8
