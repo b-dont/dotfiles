@@ -115,3 +115,7 @@ alias nvimup="$HOME/dotfiles/scripts/update_nvim_addons.sh"
 
 # Starship prompt
 # eval "$(starship init zsh)"
+
+# To customize prompt, run `p10k configure` or edit ~/.dotfiles/dots/p10k/.p10k.zsh.
+[[ ! -f ~/.dotfiles/dots/p10k/.p10k.zsh ]] || source ~/.dotfiles/dots/p10k/.p10k.zsh
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
