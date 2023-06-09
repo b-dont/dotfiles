@@ -107,9 +107,6 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 alias nvimup="$HOME/dotfiles/scripts/update_nvim_addons.sh"
 
-# To customize prompt, run `p10k configure` or edit ~/dotfiles/dots/p10k.zsh.
-[[ ! -f ~/dotfiles/dots/p10k.zsh ]] || source ~/dotfiles/dots/p10k.zsh
-
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/p10k/.p10k.zsh.
 [[ ! -f ~/.dotfiles/p10k/.p10k.zsh ]] || source ~/.dotfiles/p10k/.p10k.zsh
 
