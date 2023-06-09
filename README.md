@@ -9,3 +9,17 @@ If you'd like to install any of these files, install GNU Stow and run the `insta
 
 stow -t $HOME -S <package>
 ```
+
+## Software
+These files configure the following software:
+1. [zsh](https://zsh.sourceforge.io/)
+2. [oh-my-zsh](https://ohmyz.sh/)
+  - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+3. [Helix](helix-editor.com/)
+4. [Neovim](https://neovim.io/)
+5. [awesomewm](https://awesomewm.org/)
+6. [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+7. [tmux](https://github.com/tmux/tmux)
+8. [Alacritty](https://alacritty.org/)
+9. [PowerShell](https://github.com/PowerShell/PowerShell)
