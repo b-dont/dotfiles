@@ -1,0 +1,66 @@
+theme = "nord_soft"
+
+[editor]
+color-modes = true
+line-number = "relative"
+mouse = false
+cursorline = true
+cursorcolumn = true
+auto-completion = true
+true-color = true
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.soft-wrap]
+enable = true
+
+[editor.statusline]
+left = ["mode", "spacer", "spacer", "version-control", "spacer", "file-name"]
+right = ["diagnostics", "position", "total-line-numbers", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = false
+
+[editor.search]
+smart-case = false
+
+[editor.whitespace]
+render = 'all'
+
+[editor.whitespace.characters]
+space = ' '
+
+[editor.indent-guides]
+render = true
+character = "▏"
+skip-levels = 1
+
+# Key Remaps
+[keys.normal]
+# Split windows with C-j/k/h/l
+C-j = ":hs"
+C-k = ":hs"
+C-h = ":vs"
+C-l = ":vs"
+S-g = "goto_last_line"
+
+[keys.insert]
+C-c = "normal_mode"
+
+#[editor.soft-wrap]
+#enable = true
+#max-wrap = 25
+#max-indent-retain = 0
+#wrap-indicator = ""

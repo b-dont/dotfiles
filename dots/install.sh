@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pushd ~/.dotfiles/dots
+pushd ~/.dotfiles/dots/$1
 packages=(*)
 popd
 
