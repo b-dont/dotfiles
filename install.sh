@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -euf
-
 cd $HOME/.dotfiles/dots/$1 || exit
 
 pushd $HOME/.dotfiles/dots/$1
