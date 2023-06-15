@@ -15,7 +15,7 @@
 "type" = "nord13"
 "type.builtin" = "nord13"
 "constructor" = { fg = "nord15", modifiers = ["bold"] }
-"function" = { fg = "nord14", modifiers = ["italic"] }
+"function" = { fg = "nord7", modifiers = ["italic"] }
 "function.macro" = "nord7"
 "function.builtin" = "nord13"
 "tag" = "nord11"
