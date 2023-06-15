@@ -1,1 +1,0 @@
-oh-my-posh init pwsh --config ~/.poshthemes/wopian.omp.json | Invoke-Expression
