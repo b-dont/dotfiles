@@ -81,6 +81,10 @@ if [ -f ~/.zprofile ]; then
 	. ~/.zprofile
 fi
 
+if [ -f ~/.zprofile ]; then
+	. ~/.zshenv
+fi
+
 source $ZSH/oh-my-zsh.sh
 
 # Auto activate venv when entering a venv directory
