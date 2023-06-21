@@ -10,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
+# ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -106,17 +106,10 @@ eval "$(dircolors -p | \
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 alias nvimup="$HOME/dotfiles/scripts/update_nvim_addons.sh"
 
-# To customize prompt, run `p10k configure` or edit ~/.dotfiles/p10k/.p10k.zsh.
-[[ ! -f ~/.dotfiles/p10k/.p10k.zsh ]] || source ~/.dotfiles/p10k/.p10k.zsh
-
-# Starship prompt
-# eval "$(starship init zsh)"
-
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/dots/p10k/.p10k.zsh.
-[[ ! -f ~/.dotfiles/dots/p10k/.p10k.zsh ]] || source ~/.dotfiles/dots/p10k/.p10k.zsh
-POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+# [[ ! -f ~/.dotfiles/dots/p10k/.p10k.zsh ]] || source ~/.dotfiles/dots/p10k/.p10k.zsh
+# POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
+eval "$(starship init zsh)"
