@@ -1,0 +1,508 @@
+ls 
+clear
+ls -lA
+ls -l
+ls -la
+cd
+ls
+ls -la
+clear
+ls
+open Cargo.toml
+ls
+clear
+ls
+clear
+cd
+ls
+clear
+$nu.config-path
+cd .config/nushell/
+hx config.nu
+cd
+ls 
+clear
+ls
+mkdir -p ~/.dotfiles/dots/linux/nushell/.config/nushell
+mkdir -P ~/.dotfiles/dots/linux/nushell/.config/nushell
+mkdir -h
+mkdir -v ~/.dotfiles/dots/linux/nushell/.config/nushell
+clear
+$nu.env-path
+hx .config/nushell/env.nu
+hx .config/nushell/config.nu
+ls
+clear
+ls
+clear
+mkdir -p ~/.config && touch ~/.config/starship.toml
+mkdir -p ~/.config and touch ~/.config/starship.toml
+mkdir -v ~/.config and touch ~/.config/starship.toml
+ls -l
+rmdir and touch
+ls -lA
+ls -la
+cd .config/
+ls
+hx starship.toml/
+rmdir starship.toml/
+touch starship.toml
+clear
+cd
+cd .dotfiles/
+git status
+pwd
+clear
+cd
+clear
+$nu.config-path
+hx .config/nushell/config.nu
+ls
+source .config/nushell/config.nu
+ls
+hx .config/nushell/config.nu
+source .config/nushell/config.nu
+ls
+clear
+ls -la
+hx .config/nushell/config.nu
+source .config/nushell/config.nu
+ls -la
+ls
+clear
+cd apps/
+ls
+cd nushell/
+ls
+cd src/
+ls
+cd ..
+find . default_config.nu
+ls
+cd assets/
+ls
+cd ..
+cd scripts/
+ls
+cd ..
+ls
+cd benches/
+ls
+cd ..
+cd wix/
+ls
+cd ..
+ls
+tree
+tree | grep default_config
+cd src/
+ls
+cd tests/
+ls
+cd ..
+ls
+cd ..
+ls
+cd crates/
+ls
+cd nu-utils/src/
+ls
+cd sample_config/
+ls
+hx sample_login.nu
+hx default_config.nu
+hx .config/nushell/config.nu
+source .config/nushell/config.nu
+ls
+clear
+cat /etc/shells
+ps
+clear
+ps | sort-by cpu
+ps | sort-by cpu | reverse
+ps | sort-by cpu
+clear
+top
+ps
+clear
+ls -lA
+ls -la
+clear
+ls -la
+clear
+ls
+ls -a
+ls -l
+clear
+ls
+ls -l
+clear
+cat .aliases
+bat .aliases
+bat -theme Nord -p .aliases
+bat --theme Nord -p .aliases
+clear
+ls
+clear
+ls -l
+ls -la
+clear
+ls
+ls -a
+clear
+cat .aliases
+open .aliases
+clear
+bat
+clear
+ls
+clear
+ll
+la
+clear
+ls
+ls -a
+clear
+ls -A
+clear
+ls -a
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+cd .config/
+ls
+cd nushell/
+ls
+hx config.nu
+which nu
+sudo hx /etc/shells
+which nu
+sudo vim /etc/shells
+chsh
+chsh /home/brandon/.cargo/bin/nu
+which nu
+chsh brandon /home/brandon/.cargo/bin/nu
+chsh brandon
+ls
+cat history.txt
+clear
+history
+clear
+ls
+hx env.nu
+cd ..
+clear
+ls
+ln -s /home/brandon/.config/nushell/ /home/brandon/.dotfiles/dots/linux/nushell/.config/
+ls ~/.dotfiles/dots/linux/
+ls ~/.dotfiles/dots/linux/nushell/
+ls -a ~/.dotfiles/dots/linux/nushell/
+ls -a ~/.dotfiles/dots/linux/nushell/.config/
+ls -a ~/.dotfiles/dots/linux/nushell/.config/nushell/
+rmdir ~/.dotfiles/dots/linux/nushell/.config/nushell/
+ln -s /home/brandon/.config/nushell/ /home/brandon/.dotfiles/dots/linux/nushell/.config/
+ls -a ~/.dotfiles/dots/linux/nushell/.config/nushell/
+cd
+clear
+cd .dotfiles/
+ls
+git add .
+git commit -m "Added nushell config files"
+git push
+git pull
+git push
+cd
+cd .dotfiles/
+ls
+hx README.md
+git add . && git commit -m "Edit readme"
+git add . | git commit -m "Edit readme"
+git push
+[foo bar baz]
+df
+zellij
+cd
+cd .config/
+ls
+cd zellij/
+ls
+hx config.kdl
+ls
+clear
+ls
+clear
+alc
+hx .config/alacritty/alacritty.toml
+ls
+clear
+tmux ls
+ls
+clear
+hx Downloads/shell-yes.md
+ls
+cat .aliases
+config nu
+source .config/nushell/config.nu
+config nu
+source .config/nushell/config.nu
+config nu
+source .config/nushell/config.nu
+config nu
+source .config/nushell/config.nu
+config nu
+source .config/nushell/config.nu
+ali
+source .config/nushell/config.nu
+config nu
+clear
+ls -lA
+ls -la
+clear
+config nu
+source .config/nushell/config.nu
+ls -la
+clear
+ls
+cd blog/
+ls
+config nu
+clear
+ls
+cd
+clear
+mv Downloads/shell-yes.md blog/
+cd blog/
+ls
+mv shell-yes.md drafts/
+cd drafts/
+ls
+hx shell-yes.md
+ls
+mv shell-yes.md shell-yes-tty1.md
+mv ~/Downloads/shell-yes.md .
+ls
+stow --help
+hx shell-yes.md
+clear
+ls
+hx .config/nushell/env.nu
+cd
+hx .config/nushell/env.nu
+echo EDITOR
+echo $EDITOR
+echo env.$EDITOR
+clear
+config nu
+source .config/nushell/config.nu
+ls
+ls -lA
+clear
+ls -la
+clear
+ls
+ls -a
+clear
+ls -l
+clear
+ls -l
+ls -a
+ls
+clear
+ls
+cd blog/
+ls
+cd drafts/
+ls
+cd blog/
+cd
+cd projects/web/brandont.dev/
+zola help
+zola serve --help
+ls
+cd content/
+ls
+cd blog/
+ls
+mv drafts/shell-yes.md ../
+zola serve --drafts
+ls
+mv ../shell-yes.md .
+ls
+hx shell-yes.md shell-yes-tty1.md
+cd ..
+ls
+mv drafts/shell-yes.md .
+ls
+hx shell-yes.md
+tree ~/.dotfiles/
+hx shell-yes.md drafts/shell-yes-tty1.md
+ls
+mv shell-yes.md drafts/
+ls
+cd drafts/
+ls
+clear
+cd
+clear
+ls -l
+clear
+ls -lA
+ls -l
+clear
+ls -a
+clear
+cd blog/
+ls
+git diff
+ls
+git diff
+git add . 
+git commit -m "Moved draft to drafts directory"
+git push
+cd
+clear
+ls
+cd .dotfiles/
+ls
+cd dots/
+ls
+ls -l
+clear
+ls -a
+clear
+cd linux/
+ls
+cd nushell/
+ls
+cd .config/
+ls
+cd nushell/
+ls
+hx config.nu
+hx env.nu
+clear
+ls
+cd
+clear
+ll
+la
+clear
+ls
+clear
+cd blog/
+ls
+hx drafts/shell-yes.md
+cd ..
+ls
+cd ..
+ls
+clear
+ls
+ll
+la
+clear
+cd
+clear
+tmux
+clear
+ls
+clear
+cd projects/
+ls
+mkdir nu
+ls
+date
+date now
+clear
+ls
+ll
+clear
+ll
+sys
+sys | table
+sys | get host
+clear
+ll
+sys | get host
+sys | get host.session.name
+sys | get host.sessions.name
+ps
+grep
+ps | grep nu
+ls
+clear
+config nu
+hx --health | grep nu
+hx --health
+config nu
+src
+hlc
+source .config/nushell/config.nu
+hlc
+cd .config/helix/
+ls
+hx languages.toml
+cd
+config nu
+source .config/nushell/config.nu
+hlc
+ali
+cat /etc/hosts
+ssh btp@brandont-p
+ssh RT-AX82U
+cat /etc/resolv.conf
+resolvectl status
+ll
+clear
+la
+clear
+ls
+ps | where cpu > 5
+date now | date to-table
+sys | get host.sessions.name | each { |it| ^echo $it }
+flatpak update
+upd
+sudo dnf update -y
+flatpak update
+/etc/
+cd
+clear
+clear
+ls
+clear
+ls
+cd .dotfiles/
+ls
+git add .
+git commit -m "Working on nushell configs"
+git push
+cd dots/linux/nushell/
+ls
+ls -a
+cd .config/
+ls
+cd nushell/
+ls
+cd ..
+ls
+cd ..
+ls
+cd .dotfiles/
+ls
+cd dots/linux/
+ls
+cd nushell/
+ls
+ls -lA
+ls -la
+la
+cd .config/
+ls
+rm nushell/
+ls
