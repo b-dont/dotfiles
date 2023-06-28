@@ -1,3 +1,7 @@
+if not ('SSH_CONNECTION' in $env) {
+  if not ('TMUX' in $env) {tmux}
+}
+
 # Nushell Config File
 #
 # version = 0.80.1
@@ -543,6 +547,7 @@ let-env config = {
   ]
 }
 
+# Command aliases
 alias cat = bat --theme Nord -p
 alias ll = ls -la
 alias la = ls -a
@@ -560,6 +565,7 @@ alias vrc = hx ~/.config/nvim/init.vim
 # Python venvs
 alias venv = python -m venv
 
+# Starship prompt
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
 source ~/.cache/starship/init.nu
