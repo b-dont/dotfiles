@@ -8,6 +8,9 @@
 # And here is the theme collection
 # https://github.com/nushell/nu_scripts/tree/main/themes
 
+# If you do not have an aliases.nu file, comment this out
+use ~/.config/nushell/aliases.nu *
+
 let dark_theme = {
     # color for nushell primitives
     separator: white
@@ -544,24 +547,6 @@ let-env config = {
     }
   ]
 }
-
-# Command aliases
-alias cat = bat --theme Nord -p
-alias ll = ls -la
-alias la = ls -a
-
-# Open config files in helix
-alias ali = hx ~/.aliases
-alias zrc = hx ~/.zshrc
-alias trc = hx ~/.tmux.conf
-alias alc = hx ~/.config/alacritty/alacritty.toml
-alias hrc = hx ~/.config/helix/config.toml
-alias hlc = hx ~/.config/helix/languages.toml
-alias awm = hx ~/.config/awesome/rc.lua
-alias vrc = hx ~/.config/nvim/init.vim
-
-# Python venvs
-alias venv = python -m venv
 
 # Starship prompt
 mkdir ~/.cache/starship

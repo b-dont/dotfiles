@@ -35,8 +35,8 @@ decorations = "None"
   lines = 45
 
   [window.padding]
-  x = 15
-  y = 15
+  x = 20
+  y = 20
 
 [font]
 size = 11.0
