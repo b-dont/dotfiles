@@ -547,24 +547,6 @@ let-env config = {
   ]
 }
 
-# Command aliases
-alias cat = batcat --theme Nord -p
-alias ll = ls -la
-alias la = ls -a
-
-# Open config files in helix
-alias ali = hx ~/.aliases
-alias zrc = hx ~/.zshrc
-alias trc = hx ~/.tmux.conf
-alias alc = hx ~/.config/alacritty/alacritty.toml
-alias hrc = hx ~/.config/helix/config.toml
-alias hlc = hx ~/.config/helix/languages.toml
-alias awm = hx ~/.config/awesome/rc.lua
-alias vrc = hx ~/.config/nvim/init.vim
-
-# Python venvs
-alias venv = python -m venv
-
 # Starship prompt
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
