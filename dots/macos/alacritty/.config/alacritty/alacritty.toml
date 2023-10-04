@@ -33,11 +33,11 @@ dynamic_padding = true
   lines = 45
 
   [window.padding]
-  x = 12
-  y = 12
+  x = 20
+  y = 20
 
 [font]
-size = 11.0
+size = 14.0
 
   [font.normal]
   family = "JetBrainsMono Nerd Font"

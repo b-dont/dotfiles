@@ -4,8 +4,12 @@
 
 # For more information on defining custom themes, see
 # https://www.nushell.sh/book/coloring_and_theming.html
+
 # And here is the theme collection
 # https://github.com/nushell/nu_scripts/tree/main/themes
+
+use ~/.config/nushell/aliases.nu *
+
 let dark_theme = {
     # color for nushell primitives
     separator: white
@@ -176,14 +180,15 @@ let light_theme = {
     shape_vardecl: purple
 }
 
-# External completer example
-# let carapace_completer = {|spans|
-#     carapace $spans.0 nushell $spans | from json
-# }
-
+# If the session is not over SSH and TMUX is not running
+# run TMUX
+if not ('SSH_CONNECTION' in $env) {
+  if not ('TMUX' in $env) {tmux}
+}
 
 # The default config record. This is where much of your global configuration is setup.
-let-env config = {
+$env.config = {
+  color_config: $dark_theme
   # true or false to enable or disable the welcome banner at startup
   show_banner: false
   ls: {
@@ -268,7 +273,7 @@ let-env config = {
     max_size: 10000 # Session has to be reloaded for this to take effect
     sync_on_enter: true # Enable to share history between multiple sessions, else you have to close the session to write history to file
     file_format: "plaintext" # "sqlite" or "plaintext"
-    history_isolation: true # true enables history isolation, false disables it. true will allow the history to be isolated to the current session. false will allow the history to be shared across all sessions.
+    # history_isolation: true # true enables history isolation, false disables it. true will allow the history to be isolated to the current session. false will allow the history to be shared across all sessions.
   }
   completions: {
     case_sensitive: false # set to true to enable case-sensitive completions
@@ -287,10 +292,9 @@ let-env config = {
   }
   cursor_shape: {
     emacs: block # block, underscore, line, blink_block, blink_underscore, blink_line (line is the default)
-    vi_insert: line # block, underscore, line , blink_block, blink_underscore, blink_line (block is the default)
-    vi_normal: underscore # block, underscore, line, blink_block, blink_underscore, blink_line (underscore is the default)
+    vi_insert: block # block, underscore, line , blink_block, blink_underscore, blink_line (block is the default)
+    vi_normal: block # block, underscore, line, blink_block, blink_underscore, blink_line (underscore is the default)
   }
-  color_config: $dark_theme   # if you want a light theme, replace `$dark_theme` to `$light_theme`
   use_grid_icons: true
   footer_mode: "25" # always, never, number_of_rows, auto
   float_precision: 2 # the precision for displaying floats in tables
@@ -543,6 +547,7 @@ let-env config = {
   ]
 }
 
+# Command aliases
 alias cat = bat --theme Nord -p
 alias ll = ls -la
 alias la = ls -a
@@ -560,6 +565,7 @@ alias vrc = hx ~/.config/nvim/init.vim
 # Python venvs
 alias venv = python -m venv
 
-mkdir ~/.cache/starship
-starship init nu | save -f ~/.cache/starship/init.nu
+# Starship prompt
+# mkdir ~/.cache/starship
+# starship init nu | save -f ~/.cache/starship/init.nu
 source ~/.cache/starship/init.nu
