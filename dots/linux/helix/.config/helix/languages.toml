@@ -36,8 +36,3 @@ auto-format = false
 [[language]]
 name = "yaml"
 auto-format = false
-
-[[language]]
-name = "toml"
-auto-format = false
-# Taplo is disabled due to a known bug in the LSP

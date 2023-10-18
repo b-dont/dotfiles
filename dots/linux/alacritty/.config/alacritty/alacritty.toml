@@ -28,7 +28,7 @@ SHELL = "/home/brandon/.cargo/bin/nu"
 
 [window]
 dynamic_padding = true
-decorations = "None"
+decorations = "none"
 
   [window.dimensions]
   columns = 122
