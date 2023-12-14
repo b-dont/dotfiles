@@ -549,3 +549,5 @@ $env.config = {
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
 source ~/.cache/starship/init.nu
+
+source ~/.zoxide.nu
