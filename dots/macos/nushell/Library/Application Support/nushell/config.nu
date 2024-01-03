@@ -566,3 +566,6 @@ alias venv = python -m venv
 # mkdir ~/.cache/starship
 # starship init nu | save -f ~/.cache/starship/init.nu
 source ~/.cache/starship/init.nu
+
+# zoxide
+source ~/.zoxide.nu
