@@ -2,26 +2,53 @@ format = """
 $username\
 $hostname\
 $directory\
+$line_break\
 $git_branch\
 $git_state\
 $git_status\
-$cmd_duration\
-$line_break\
 $python\
+$container\
 $character"""
+right_format = "$cmd_duration"
+palette = 'nord'
+
+[palettes.nord]
+# Dark backgrounds
+nord1 = '#2e3440'
+nord2 = '#3b4252'
+nord3 = '#424c5e'
+nord4 = '#4c566a'
+
+# Foreground
+nord5 = '#d8dee9'
+nord6 = '#e5e9f0'
+nord7 = '#e5e9f0'
+
+# Blues
+nord8 = '#8fbcbb'
+nord9 = '#88c0d0'
+nord10 = '#81a1c1'
+nord11 = '#5e81ac'
+
+# Aurora
+nord12 = '#bf616a' # Red
+nord13 = '#d08770' # Orange
+nord14 = '#ebcb8b' # Yellow
+nord15 = '#a3be8c' # Green
+nord16 = '#b48ead' # Purple
 
 [directory]
-style = "blue"
+style = "nord11"
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[❯](nord16)"
+error_symbol = "[❯](nord12)"
+vimcmd_symbol = "[❮](nord15)"
 
 [git_branch]
-format = "[$symbol$branch]($style)"
-symbol = " "
-style = "bright-black"
+format = "([$symbol](nord10)[$branch]($style))"
+symbol = " "
+style = "nord4"
 truncation_length = 9223372036854775807
 truncation_symbol = "…"
 only_attached = false
@@ -30,11 +57,11 @@ ignore_branches = ["main"]
 disabled = false
 
 [git_metrics]
-added_style = "bold green"
-deleted_style = "bold red"
+added_style = "bold nord15"
+deleted_style = "bold nord12"
 only_nonzero_diffs = true
 format = "([+$added]($added_style) )([-$deleted]($deleted_style) )"
-disabled = true
+disabled = false
 ignore_submodules = false
 
 [git_state]
@@ -45,35 +72,36 @@ cherry_pick = "CHERRY-PICKING"
 bisect = "BISECTING"
 am = "AM"
 am_or_rebase = "AM/REBASE"
-style = "bright-black"
+style = "nord1"
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
 disabled = false
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "cyan"
+style = "nord8"
 stashed = "≡"
 ahead = "⇡"
 behind = "⇣"
 up_to_date = ""
 diverged = "⇕"
 conflicted = "​"
-deleted = "​"
-renamed = "​"
+untracked = "​"
 modified = "​"
 staged = "​"
-untracked = "​"
+renamed = "​"
+deleted = "​"
 typechanged = ""
 ignore_submodules = false
 disabled = false
 
 [cmd_duration]
 format = "[$duration]($style) "
-style = "yellow"
+style = "nord14"
 
 [python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+format = "[$symbol$virtualenv]($style) "
+style = "nord4"
+symbol = " "
 
 [container]
 format = '[$symbol \[$name\]]($style) '
@@ -86,13 +114,13 @@ ssh_only = true
 ssh_symbol = "ssh@"
 trim_at = "."
 format = "[$ssh_symbol$hostname ]($style)"
-style = "bright-black italic"
+style = "nord4 italic"
 disabled = false
 
 [username]
 format = "[$user]($style) "
-style_root = "red bold"
-style_user = "yellow bold"
+style_root = "nord12 bold"
+style_user = "nord14 bold"
 show_always = false
 disabled = true
 
