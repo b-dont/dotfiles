@@ -19,23 +19,53 @@ error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 
 [git_branch]
-format = "[$branch]($style)"
+format = "[$symbol$branch]($style)"
+symbol = " "
 style = "bright-black"
+truncation_length = 9223372036854775807
+truncation_symbol = "…"
+only_attached = false
+always_show_remote = false
+ignore_branches = ["main"]
+disabled = false
+
+[git_metrics]
+added_style = "bold green"
+deleted_style = "bold red"
+only_nonzero_diffs = true
+format = "([+$added]($added_style) )([-$deleted]($deleted_style) )"
+disabled = true
+ignore_submodules = false
+
+[git_state]
+rebase = "REBASING"
+merge = "MERGING"
+revert = "REVERTING"
+cherry_pick = "CHERRY-PICKING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style = "bright-black"
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+disabled = false
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
 style = "cyan"
+stashed = "≡"
+ahead = "⇡"
+behind = "⇣"
+up_to_date = ""
+diverged = "⇕"
 conflicted = "​"
-untracked = "​"
+deleted = "​"
+renamed = "​"
 modified = "​"
 staged = "​"
-renamed = "​"
-deleted = "​"
-stashed = "≡"
-
-[git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+untracked = "​"
+typechanged = ""
+ignore_submodules = false
+disabled = false
 
 [cmd_duration]
 format = "[$duration]($style) "
@@ -44,3 +74,25 @@ style = "yellow"
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
+
+[container]
+format = '[$symbol \[$name\]]($style) '
+symbol = "⬢"
+style = "red bold dimmed"
+disabled = false
+
+[hostname]
+ssh_only = true
+ssh_symbol = "ssh@"
+trim_at = "."
+format = "[$ssh_symbol$hostname ]($style)"
+style = "bright-black italic"
+disabled = false
+
+[username]
+format = "[$user]($style) "
+style_root = "red bold"
+style_user = "yellow bold"
+show_always = false
+disabled = true
+
