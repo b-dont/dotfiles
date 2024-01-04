@@ -8,6 +8,7 @@ $git_state\
 $git_status\
 $python\
 $container\
+$docker_context\
 $character"""
 right_format = "$cmd_duration"
 palette = 'nord'
@@ -38,7 +39,19 @@ nord15 = '#a3be8c' # Green
 nord16 = '#b48ead' # Purple
 
 [directory]
+truncation_length = 3
+truncate_to_repo = true
+fish_style_pwd_dir_length = 0
+use_logical_path = true
+format = "[$path]($style)[$read_only]($read_only_style) "
+repo_root_format = "[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
 style = "nord11"
+disabled = false
+read_only = "🔒"
+read_only_style = "red"
+truncation_symbol = ""
+home_symbol = "~"
+use_os_path_sep = true
 
 [character]
 success_symbol = "[❯](nord16)"
@@ -53,7 +66,7 @@ truncation_length = 9223372036854775807
 truncation_symbol = "…"
 only_attached = false
 always_show_remote = false
-ignore_branches = ["main"]
+ignore_branches = []
 disabled = false
 
 [git_metrics]
@@ -105,9 +118,26 @@ symbol = " "
 
 [container]
 format = '[$symbol \[$name\]]($style) '
-symbol = "⬢"
+symbol = "⬢ "
 style = "red bold dimmed"
 disabled = false
+
+[docker_context]
+symbol = "🐳 "
+style = "blue bold"
+format = "via [$symbol$context]($style) "
+only_with_files = true
+disabled = false
+detect_extensions = []
+detect_files = [
+    "docker-compose.yml",
+    "docker-compose.yaml",
+    "compose.yml",
+    "compose.yaml",
+    "Dockerfile",
+    "Containerfile",
+]
+detect_folders = ["containers"]
 
 [hostname]
 ssh_only = true
@@ -123,4 +153,3 @@ style_root = "nord12 bold"
 style_user = "nord14 bold"
 show_always = false
 disabled = true
-
