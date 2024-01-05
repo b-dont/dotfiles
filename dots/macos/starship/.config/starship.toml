@@ -2,45 +2,161 @@ format = """
 $username\
 $hostname\
 $directory\
+$line_break\
 $git_branch\
 $git_state\
 $git_status\
-$cmd_duration\
-$line_break\
 $python\
+$container\
+$docker_context\
 $character"""
+right_format = ""
+palette = 'nord'
+add_newline = true
+
+[palettes.nord]
+# Dark backgrounds
+nord1 = '#2e3440'
+nord2 = '#3b4252'
+nord3 = '#424c5e'
+nord4 = '#4c566a'
+
+# Foreground
+nord5 = '#d8dee9'
+nord6 = '#e5e9f0'
+nord7 = '#e5e9f0'
+
+# Blues
+nord8 = '#8fbcbb'
+nord9 = '#88c0d0'
+nord10 = '#81a1c1'
+nord11 = '#5e81ac'
+
+# Aurora
+nord12 = '#bf616a' # Red
+nord13 = '#d08770' # Orange
+nord14 = '#ebcb8b' # Yellow
+nord15 = '#a3be8c' # Green
+nord16 = '#b48ead' # Purple
 
 [directory]
-style = "blue"
+truncation_length = 3
+truncate_to_repo = true
+fish_style_pwd_dir_length = 0
+use_logical_path = true
+format = "[$path]($style)[$read_only]($read_only_style) "
+repo_root_format = "[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
+repo_root_style = "nord11"
+style = "nord10"
+disabled = false
+read_only = ""
+read_only_style = "nord12"
+truncation_symbol = ""
+home_symbol = "~"
+use_os_path_sep = true
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[❯](nord16)"
+error_symbol = "[❯](nord12)"
+vimcmd_symbol = "[❮](nord16)"
 
 [git_branch]
-format = "[$branch]($style)"
-style = "bright-black"
+format = "([$symbol](nord10)[$branch]($style))"
+symbol = " "
+style = "nord4"
+truncation_length = 9223372036854775807
+truncation_symbol = "…"
+only_attached = false
+always_show_remote = false
+ignore_branches = []
+disabled = false
+
+[git_metrics]
+added_style = "bold nord15"
+deleted_style = "bold nord12"
+only_nonzero_diffs = true
+format = "([+$added]($added_style) )([-$deleted]($deleted_style) )"
+disabled = false
+ignore_submodules = false
+
+[git_state]
+rebase = "REBASING"
+merge = "MERGING"
+revert = "REVERTING"
+cherry_pick = "CHERRY-PICKING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style = "nord4"
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+disabled = false
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "cyan"
-conflicted = "​"
-untracked = "​"
-modified = "​"
-staged = "​"
-renamed = "​"
-deleted = "​"
+style = "nord8"
 stashed = "≡"
-
-[git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+ahead = "⇡"
+behind = "⇣"
+up_to_date = "​"
+diverged = "⇕"
+conflicted = "="
+untracked = "?"
+modified = "!"
+staged = "+"
+renamed = "»"
+deleted = ""
+typechanged = ""
+ignore_submodules = true
+disabled = false
 
 [cmd_duration]
 format = "[$duration]($style) "
-style = "yellow"
+style = "nord14"
 
 [python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+format = "[$symbol$virtualenv]($style) "
+style = "nord4"
+symbol = " "
+
+[container]
+format = '[$symbol \[$name\]]($style) '
+symbol = "⬢ "
+style = "red bold dimmed"
+disabled = false
+
+[docker_context]
+symbol = "󰡨 "
+style = "nord10"
+format = "via [$symbol$context]($style) "
+only_with_files = true
+disabled = false
+detect_extensions = []
+detect_files = [
+    "docker-compose.yml",
+    "docker-compose.yaml",
+    "compose.yml",
+    "compose.yaml",
+    "Dockerfile",
+    "Containerfile",
+]
+detect_folders = ["containers"]
+
+[hostname]
+ssh_only = true
+ssh_symbol = "ssh@"
+trim_at = "."
+format = "[$ssh_symbol$hostname ]($style)"
+style = "nord4 italic"
+disabled = false
+
+[username]
+format = "[$user]($style) "
+style_root = "nord12 bold"
+style_user = "nord14 bold"
+show_always = false
+disabled = true
+
+[os]
+format = "[$name]($style)"
+style = "nord11"
+disabled = false

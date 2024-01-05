@@ -1,0 +1,124 @@
+# Everforest soft dark theme for Helix
+
+"attribute" = "aqua"
+"keyword" = { fg = "red" }
+"keyword.directive" = "red"
+"namespace" = "aqua"
+"punctuation" = "orange"
+"punctuation.delimiter" = "orange"
+"operator" = "purple"
+"special" = "purple"
+"variable.other.member" = "blue"
+"variable" = "gray2"
+"variable.builtin" = "orange"
+"variable.parameter" = "gray2"
+"type" = "yellow"
+"type.builtin" = "yellow"
+"constructor" = { fg = "purple", modifiers = ["bold"] }
+"function" = { fg = "green", modifiers = ["italic"] }
+"function.macro" = "aqua"
+"function.builtin" = "yellow"
+"tag" = "red"
+"comment" = { fg = "blue", modifiers = ["italic", "dim"] }
+"constant" = { fg = "purple" }
+"constant.builtin" = { fg = "purple", modifiers = ["bold"] }
+"string" = "green"
+"constant.numeric" = "purple"
+"constant.character.escape" = { fg = "gray2", modifiers = ["bold"] }
+"label" = "aqua"
+"module" = "aqua"
+
+"diff.plus" = "green"
+"diff.delta" = "orange"
+"diff.minus" = "red"
+
+"warning" = "orange"
+"error" = "red"
+"info" = "aqua"
+"hint" = "blue"
+"diagnostic" = { bg = "bg0" }
+
+"ui.background" = {}
+
+# Number Lines
+"ui.linenr" = { fg = "bg2" }
+"ui.linenr.selected" = { fg = "aqua", modifiers = ["bold"] }
+
+# Cursor
+"ui.cursor.primary" = { fg = "bgdim", bg = "fg0" }
+"ui.cursor.match" = { fg = "fg0", bg = "bg2" }
+"ui.cursorline.primary" = { bg = "bg0" }
+"ui.cursorline.secondary" = { bg = "bg0" }
+"ui.cursorcolumn.primary" = { bg = "bg0" }
+"ui.cursorcolumn.secondary" = { bg = "bg0" }
+
+# Selections
+"ui.selection.primary" = { fg = "bgdim", bg = "fg0" }
+"ui.selection" = { fg = "bg0", bg = "fg0" }
+
+# Statusline
+"ui.statusline" = { fg = "fg0", bg = "bgdim" }
+"ui.statusline.inactive" = { fg = "bg2" }
+"ui.statusline.normal" = { fg = "green"}
+"ui.statusline.insert" = { fg = "yellow"}
+"ui.statusline.select" = { fg = "purple"}
+"ui.statusline.separator" = "bg0"
+
+"ui.popup" = { bg = "bg0" }
+"ui.window" = { bg = "bg0" }
+"ui.help" = { bg = "bg0", fg = "fg0" }
+"ui.text" = { fg = "fg0" }
+"ui.text.focus" = { fg = "fg0" }
+"ui.menu" = { fg = "fg0", bg = "bg0" }
+"ui.menu.selected" = { fg = "fg0", bg = "bg2" }
+"ui.virtual.whitespace" = "bg2"
+"ui.virtual.ruler" = { bg = "bg2" }
+
+"diagnostic.warning" = { underline = { color = "orange", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.info" = { underline = { color = "aqua", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
+
+"markup.heading" = "aqua"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "green", modifiers = ["underlined"] }
+"markup.link.text" = "red"
+"markup.raw" = "red"
+
+[palette]
+# Backgrounds
+bgdim = "#293136"
+bg0 = "#333c43"
+bg1 = "#3a464c"
+bg2 = "#434f55"
+bg3 = "#4d5960"
+bg4 = "#555f66"
+bg5 = "#4d6b66"
+bgred = "#5c3f4f"
+bgvis = "#59464c"
+bgyel = "#dbbc7f"
+bggre = "#48584e"
+bgblu = "#3f5865"
+
+# Foreground
+fg0 = "#d3c6aa"
+
+# Statusline
+sl0 = "#a7c080"
+sl1 = "#d3c6aa"
+sl2 = "#e67e80"
+
+# Greys
+grey0 = "#7a8478"
+grey1 = "#859289"
+grey2 = "#9da9a0"
+
+# Colors
+red = "#e67e80"
+orange = "#e69875"
+yellow = "#dbbc7f"
+green = "#a7c080"
+blue = "#7fbbb3"
+purple = "#d699b6"
+aqua = "#83c092"
