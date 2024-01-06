@@ -1,32 +1,32 @@
 # Soft Nord Theme (dark) for Helix Text Editor
 
 "attribute" = "nord7"
-"keyword" = { fg = "nord11" }
-"keyword.directive" = "nord11"
+"keyword" = { fg = "nord10" }
+"keyword.directive" = "nord10"
 "namespace" = "nord7"
-"punctuation" = "nord12"
-"punctuation.delimiter" = "nord12"
-"operator" = "nord15"
+"punctuation" = "nord4"
+"punctuation.delimiter" = "nord4"
+"operator" = "nord9"
 "special" = "nord15"
 "variable.other.member" = "nord9"
-"variable" = "nord5"
-"variable.builtin" = "nord12"
-"variable.parameter" = "nord5"
-"type" = "nord13"
-"type.builtin" = "nord13"
-"constructor" = { fg = "nord15", modifiers = ["bold"] }
-"function" = { fg = "nord14", modifiers = ["italic"] }
+"variable" = "nord6"
+"variable.builtin" = "nord4"
+"variable.parameter" = "nord7"
+"type" = "nord10"
+"type.builtin" = "nord10"
+"constructor" = { fg = "nord8", modifiers = ["italic"] }
+"function" = { fg = "nord8", modifiers = ["italic"] }
 "function.macro" = "nord7"
-"function.builtin" = "nord13"
-"tag" = "nord11"
+"function.builtin" = "nord8"
+"tag" = "nord8"
 "comment" = { fg = "nord9", modifiers = ["italic", "dim"] }
 "constant" = { fg = "nord15" }
 "constant.builtin" = { fg = "nord15", modifiers = ["bold"] }
 "string" = "nord14"
 "constant.numeric" = "nord15"
 "constant.character.escape" = { fg = "nord5", modifiers = ["bold"] }
-"label" = "nord7"
-"module" = "nord7"
+"label" = "nord8"
+"module" = "nord8"
 
 "diff.plus" = "nord14"
 "diff.delta" = "nord12"

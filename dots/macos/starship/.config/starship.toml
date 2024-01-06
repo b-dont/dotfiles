@@ -8,7 +8,6 @@ $git_state\
 $git_status\
 $python\
 $container\
-$docker_context\
 $character"""
 right_format = ""
 palette = 'nord'
@@ -92,12 +91,12 @@ format = '\([$state( $progress_current/$progress_total)]($style)\) '
 disabled = false
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+format = "[ [($conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
 style = "nord8"
 stashed = "≡"
 ahead = "⇡"
 behind = "⇣"
-up_to_date = "​"
+up_to_date = ""
 diverged = "⇕"
 conflicted = "="
 untracked = "?"
