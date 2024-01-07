@@ -60,7 +60,7 @@ error_symbol = "[❯](nord12)"
 vimcmd_symbol = "[❮](nord16)"
 
 [git_branch]
-format = "([$symbol](nord10)[$branch]($style))"
+format = "([$symbol](nord10)[$branch]($style) )"
 symbol = " "
 style = "nord4"
 truncation_length = 9223372036854775807
@@ -74,7 +74,7 @@ disabled = false
 added_style = "bold nord15"
 deleted_style = "bold nord12"
 only_nonzero_diffs = true
-format = "([+$added]($added_style) )([-$deleted]($deleted_style) )"
+format = "([+$added]($added_style))([-$deleted]($deleted_style))"
 disabled = false
 ignore_submodules = false
 
@@ -91,7 +91,7 @@ format = '\([$state( $progress_current/$progress_total)]($style)\) '
 disabled = false
 
 [git_status]
-format = "[ [($conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+format = "[[($conflicted$untracked$modified$staged$renamed$deleted)](218)($ahead_behind$stashed)]($style)"
 style = "nord8"
 stashed = "≡"
 ahead = "⇡"
