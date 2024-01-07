@@ -6,12 +6,12 @@
 "namespace" = "nord7"
 "punctuation" = "nord4"
 "punctuation.delimiter" = "nord4"
-"operator" = "nord9"
+"operator" = "nord15"
 "special" = "nord15"
-"variable.other.member" = "nord9"
 "variable" = "nord6"
 "variable.builtin" = "nord4"
 "variable.parameter" = "nord7"
+"variable.other.member" = "nord9"
 "type" = "nord15"
 "type.builtin" = "nord15"
 "constructor" = { fg = "nord8", modifiers = ["italic"] }
@@ -22,7 +22,7 @@
 "comment" = { fg = "nord9", modifiers = ["italic", "dim"] }
 "constant" = { fg = "nord15" }
 "constant.builtin" = { fg = "nord15", modifiers = ["bold"] }
-"string" = "nord14"
+"string" = {fg = "nord14", modifiers = ["italic"] }
 "constant.numeric" = "nord15"
 "constant.character.escape" = { fg = "nord5", modifiers = ["bold"] }
 "label" = "nord8"
