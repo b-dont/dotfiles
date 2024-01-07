@@ -10,7 +10,7 @@ dynamic_padding = true
 decorations = "Buttonless"
 
   [window.dimensions]
-  columns = 122
+  columns = 150
   lines = 45
 
   [window.padding]
@@ -29,11 +29,11 @@ size = 14.0
   style = "Bold"
 
   [font.italic]
-  family = "JetBrainsMono Nerd Font"
+  family = "JetBrainsMono NFM"
   style = "Italic"
 
   [font.bold_italic]
-  family = "JetBrainsMono Nerd Font"
+  family = "JetBrainsMono NFM"
   style = "Bold Italic"
 
 [selection]
