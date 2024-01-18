@@ -94,6 +94,7 @@ $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/brandon/.cargo/b
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/brandon/.fly/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/brandon/.local/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/brandon/.nix-profile/bin')
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/home/brandon/go/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/nix/var/nix/profiles/default/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
 
