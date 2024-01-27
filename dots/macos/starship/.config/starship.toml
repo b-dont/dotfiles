@@ -3,12 +3,13 @@ $username\
 $hostname\
 $directory\
 $line_break\
+$python\
 $git_branch\
 $git_state\
 $git_status\
-$python\
 $container\
 $character"""
+
 right_format = ""
 palette = 'nord'
 add_newline = true
@@ -114,8 +115,8 @@ style = "nord14"
 
 [python]
 format = "[$symbol$virtualenv]($style) "
-style = "nord4"
 symbol = " "
+style = "nord14"
 
 [container]
 format = '[$symbol \[$name\]]($style) '
