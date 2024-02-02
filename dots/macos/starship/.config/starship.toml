@@ -61,8 +61,8 @@ error_symbol = "[❯](nord12)"
 vimcmd_symbol = "[❮](nord16)"
 
 [git_branch]
-format = "([$symbol](nord10)[$branch]($style) )"
-symbol = " "
+format = "([$symbol](nord10) [$branch]($style) )"
+symbol = ""
 style = "nord4"
 truncation_length = 9223372036854775807
 truncation_symbol = "…"
@@ -114,13 +114,13 @@ format = "[$duration]($style) "
 style = "nord14"
 
 [python]
-format = "[$symbol$virtualenv]($style) "
-symbol = " "
+format = "[$symbol $virtualenv]($style) "
+symbol = ""
 style = "nord14"
 
 [container]
 format = '[$symbol \[$name\]]($style) '
-symbol = "⬢ "
+symbol = "⬢"
 style = "red bold dimmed"
 disabled = false
 
