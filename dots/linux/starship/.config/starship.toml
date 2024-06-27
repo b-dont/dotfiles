@@ -3,10 +3,10 @@ $username\
 $hostname\
 $directory\
 $line_break\
+$python\
 $git_branch\
 $git_state\
 $git_status\
-$python\
 $container\
 $character"""
 right_format = ""
@@ -113,9 +113,9 @@ format = "[$duration]($style) "
 style = "nord14"
 
 [python]
-format = "[$symbol$virtualenv]($style) "
+format = "[$symbol $virtualenv ]($style)"
 style = "nord4"
-symbol = " "
+symbol = ""
 
 [container]
 format = '[$symbol \[$name\]]($style) '
