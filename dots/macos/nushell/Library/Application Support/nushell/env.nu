@@ -30,7 +30,7 @@ def create_right_prompt [] {
     let time_segment = ([
         (ansi reset)
         $time_segment_color
-        (date now | date format '%m/%d/%Y %r')
+        (date now | format date '%m/%d/%Y %r')
     ] | str join | str replace --all "([/:])" $"(ansi light_magenta_bold)${1}($time_segment_color)" |
         str replace --all "([AP]M)" $"(ansi light_magenta_underline)${1}")
 
@@ -87,8 +87,8 @@ $env.EDITOR = 'hx'
 $env.HELIX_RUNTIME = '/home/brandon/apps/helix/runtime'
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
-$env.PATH = ($env.PATH | split row (char esep) | prepend '/home/brandon/.cargo/bin')
-$env.PATH = ($env.PATH | split row (char esep) | prepend '/home/brandon/.nix-profile/bin')
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/Users/brandont/.cargo/bin')
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/Users/brandont/.nix-profile/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/nix/var/nix/profiles/default/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
 
