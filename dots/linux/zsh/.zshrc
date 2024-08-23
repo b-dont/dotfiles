@@ -96,6 +96,10 @@ function precmd {
                 . "$activate"
             fi
         done
+    else
+        if [[ "$VIRTUAL_ENV" != "" ]]; then
+        deactivate
+        fi
     fi
 }
 
