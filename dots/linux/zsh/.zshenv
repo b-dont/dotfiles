@@ -15,3 +15,6 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='hx'
 fi
+
+# Path
+export PATH="$PATH:$HOME/go/bin:$HOME/.cargo/bin"
