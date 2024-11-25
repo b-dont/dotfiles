@@ -120,3 +120,4 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 alias nvimup="$HOME/dotfiles/scripts/update_nvim_addons.sh"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
