@@ -65,7 +65,6 @@ HIST_STAMPS="mm/dd/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  tmux
   gitignore
   aliases
   zsh-autosuggestions
@@ -81,11 +80,11 @@ if [ -f ~/.zprofile ]; then
 	. ~/.zprofile
 fi
 
-if [ -f ~/.zprofile ]; then
+if [ -f ~/.zshenv ]; then
 	. ~/.zshenv
 fi
 
-source $ZSH/oh-my-zsh.sh
+. $ZSH/oh-my-zsh.sh
 
 # Auto activate venv when entering a venv directory
 function precmd {
@@ -96,10 +95,6 @@ function precmd {
                 . "$activate"
             fi
         done
-    else
-        if [[ "$VIRTUAL_ENV" != "" ]]; then
-        deactivate
-        fi
     fi
 }
 
@@ -109,11 +104,5 @@ eval "$(dircolors -p | \
     dircolors /dev/stdin)"
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-
-alias nvimup="$HOME/dotfiles/scripts/update_nvim_addons.sh"
-
-# To customize prompt, run `p10k configure` or edit ~/.dotfiles/dots/p10k/.p10k.zsh.
-# [[ ! -f ~/.dotfiles/dots/p10k/.p10k.zsh ]] || source ~/.dotfiles/dots/p10k/.p10k.zsh
-# POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
 eval "$(starship init zsh)"

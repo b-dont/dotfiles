@@ -36,3 +36,7 @@ auto-format = false
 [[language]]
 name = "yaml"
 auto-format = false
+
+[[language]]
+name = "toml"
+auto-format = false

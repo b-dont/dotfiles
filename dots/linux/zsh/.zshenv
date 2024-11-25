@@ -17,4 +17,4 @@ else
 fi
 
 # Path
-export PATH="$PATH:$HOME/go/bin:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/go/bin:$HOME/.cargo/bin:$HOME/.local/bin"
