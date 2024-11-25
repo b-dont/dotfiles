@@ -21,3 +21,7 @@ blue = "0x81A1C1"
 magenta = "0xB48EAD"
 cyan = "0x8FBCBB"
 white = "0xECEFF4"
+
+[colors.hints]
+start = { foreground = "0xEBCB8B", background = "0xBF616A" }
+end = { foreground = "0xBF616A", background = "0xEBCB8B" }
