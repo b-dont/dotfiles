@@ -113,10 +113,10 @@ export NVM_DIR="$HOME/.nvm"
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # Starship prompt
 eval "$(starship init zsh)"
+
+# Zoxide
+eval "$(zoxide init zsh)"
 
 alias nvimup="$HOME/dotfiles/scripts/update_nvim_addons.sh"
