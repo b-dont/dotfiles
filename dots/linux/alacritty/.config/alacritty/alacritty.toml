@@ -55,5 +55,5 @@ regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:
 
 [[hints.enabled]]
 regex = '[^ ]+(:?\s*)$'
-command = { program = "/usr/bin/tmux", args = ["split-window", "-h", "-c", "#{pane_current_path}", "sh", "-c", "-c", "hx \"$0\""] }
+command = { program = "/usr/bin/tmux", args = ["split-window", "-h", "-c", "#{pane_current_path}", "sh", "-c", "hx \"$0\""] }
 binding = { key = "2", mods = "Control" }
