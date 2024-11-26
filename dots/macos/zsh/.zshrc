@@ -120,3 +120,9 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 alias nvimup="$HOME/dotfiles/scripts/update_nvim_addons.sh"
+
+# fzf
+source <(fzf --zsh)
+
+# Created by `pipx` on 2024-11-17 20:45:36
+export PATH="$PATH:/Users/brandont/.local/bin"
