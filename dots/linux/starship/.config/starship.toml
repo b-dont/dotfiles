@@ -142,9 +142,9 @@ detect_folders = ["containers"]
 
 [hostname]
 ssh_only = true
-ssh_symbol = "ssh@"
+ssh_symbol = ""
 trim_at = "."
-format = "[$ssh_symbol$hostname ]($style)"
+format = "[$user@$hostname ]($style)"
 style = "nord4 italic"
 disabled = false
 

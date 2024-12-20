@@ -10,16 +10,17 @@ auto-format = false
 name = "bash"
 auto-format = false
 file-types = [
-  ".aliases", 
-  ".zshrc", 
-  "zshrc", 
-  ".zprofile", 
-  "zshenv", 
-  ".zshenv", 
-  "zprofile", 
-  "conf", 
-  "zsh"
+{ glob= ".aliases" },
+{ glob= ".zshrc" },
+{ glob= "zshrc" },
+{ glob= ".zprofile" },
+{ glob= "zshenv" },
+{ glob= ".zshenv" },
+{ glob= "zprofile" },
+{ glob= "conf" },
+{ glob= "zsh "}
 ]
+shebangs = ["sh", "bash", "zsh"]
 
 [[language]]
 name = "python"
