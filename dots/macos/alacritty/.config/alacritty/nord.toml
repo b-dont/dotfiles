@@ -1,10 +1,10 @@
 [colors.primary]
-background = "#2e3440"
-foreground = "#d8dee9"
+background = "0x2E3440"
+foreground = "0xD8DEE9"
 
 [colors.normal]
-black = "#4d6b66"
-red = "#bf616a"
+black = "0x3B4252"
+red = "0xBF616A"
 green = "0xA3BE8C"
 yellow = "0xEBCB8B"
 blue = "0x5e81ac"
@@ -21,3 +21,7 @@ blue = "0x81A1C1"
 magenta = "0xB48EAD"
 cyan = "0x8FBCBB"
 white = "0xECEFF4"
+
+[colors.hints]
+start = { foreground = "0xEBCB8B", background = "0xBF616A" }
+end = { foreground = "0xBF616A", background = "0xEBCB8B" }

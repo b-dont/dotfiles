@@ -118,5 +118,3 @@ eval "$(starship init zsh)"
 
 # Zoxide
 eval "$(zoxide init zsh)"
-
-alias nvimup="$HOME/dotfiles/scripts/update_nvim_addons.sh"
