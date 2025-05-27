@@ -1,6 +1,3 @@
-import = [
-  "~/.config/alacritty/nord.toml"
-]
 
 [env]
 TERM = "xterm-256color"
@@ -57,3 +54,8 @@ regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:
 regex = '[^ ]+(:?\s*)$'
 command = { program = "/usr/bin/tmux", args = ["split-window", "-h", "-c", "#{pane_current_path}", "sh", "-c", "hx \"$0\""] }
 binding = { key = "2", mods = "Control" }
+
+[general]
+import = [
+  "~/.config/alacritty/nord.toml"
+]
