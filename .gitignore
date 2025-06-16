@@ -2,3 +2,4 @@
 /scripts/update_dots.sh
 /config/helix/runtime/*
 history.txt
+.DS_Store
