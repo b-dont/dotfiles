@@ -84,7 +84,6 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 plugins=(
 	git
-	tmux
 	gitignore
 	aliases
 	zsh-autosuggestions
